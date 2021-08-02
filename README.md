@@ -21,8 +21,8 @@ The core requires a 48MHz/60MHz clock input, which the AXI4-Lite and UTMI interf
 Verified under simulation.
 
 ##### References
-* [Original USB Core]  github.com/ultraembedded/core_usb_host
-* [Original USB Phy]   github.com/ultraembedded/core_usb_fs_phy.git 
+* [Original USB Core](github.com/ultraembedded/core_usb_host)
+* [Original USB Phy](github.com/ultraembedded/core_usb_fs_phy.git)
 * [USB 2.0 Specification](https://usb.org/developers/docs/usb20_docs)
 * [UTMI Specification](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb2-transceiver-macrocell-interface-specification.pdf)
 * [USB Made Simple](http://www.usbmadesimple.co.uk/)
