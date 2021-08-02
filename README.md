@@ -1,6 +1,6 @@
-### USB 1.1 Host Controller
+### USB 1.1 Host Controller + PHY
 
-This IP core is a cutdown USB host controller which allows communications with full-speed (12mbps) USB devices.
+This IP core is a cutdown USB host controller + Phy which allows communications with full-speed (12mbps) USB devices.
 
 The IP is accessed via an WishBone slave register interface for control, status and data.
 
@@ -14,10 +14,38 @@ Instance usbh_host and hookup to UTMI PHY interface and a Wishbone master (e.g. 
 Wishbone  & UTMP interface can be different clock rate and design handles the async handshake 
 The core requires a 48MHz/60MHz USB clock input for UTMI Interface.
 
+# USB1 Host Block Diagram
+<table>
+  <tr>
+    <td  align="center"><img src="./docs/BlockDiagram.png" ></td>
+  </tr>
+
+</table>
 
 ##### Limitations
 * Only tested for USB-FS (Full Speed / 12Mbit/s) only.
 
+# USB1 Host Test Bench
+<table>
+  <tr>
+    <td> align="center"><img src="./docs/TestBenchSetup.png" ></td>
+    <td> align="center">RTL verification included with 40 Character for Uart Remote Loop Back </td>
+    <td> Run command:  verify/run/run_modelsim                       </td>
+    <td> Test Report Status                                          </td>
+   <td> # -------------------- Reporting Status -------------------- </td>
+   <td> #                                                            </td>
+   <td> # 	Number of character received is :    40              </td>
+   <td> # 	Number of character sent     is :    40              </td>
+   <td> # 	Number of parity error rxd   is :     0              </td>
+   <td> # 	Number of stop1  error rxd   is :     0              </td>
+   <td> # 	Number of stop2  error rxd   is :     0              </td>
+   <td> # 	Number of timeout error      is :     0              </td>
+   <td> # 	Number of error              is :     0              </td>
+   <td> # -----------------------------------------------------------</td>
+
+  </tr>
+
+</table>
 ##### Testing
 
 Verified under simulation.
