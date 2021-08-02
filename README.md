@@ -4,14 +4,16 @@ This IP core is a cutdown USB host controller which allows communications with f
 
 The IP is accessed via an WishBone slave register interface for control, status and data.
 
-Data to be sent or received is stored in some internal FIFOs. The data is accessed through the AXI4-Lite slave port. There is no DMA engine (e.g. a bus mastering interface) associated with this IP.
+Data to be sent or received is stored in some internal FIFOs. The data is accessed through the WishBone slave port. There is no DMA engine (e.g. a bus mastering interface) associated with this IP.
 
 The core functions well, is very small, but is fairly inefficient in terms of CPU cycles required to perform USB transfers.
 This core is not compliant with any standard USB host interface specification, e.g OHCI or EHCI.
 
 ##### Instantiation
 Instance usbh_host and hookup to UTMI PHY interface and a Wishbone master (e.g. from your CPU).
-The core requires a 48MHz/60MHz clock input, which the AXI4-Lite and UTMI interfaces are expected to be synchronous to.
+Wishbone  & UTMP interface can be different clock rate and design handles the async handshake 
+The core requires a 48MHz/60MHz USB clock input for UTMI Interface.
+
 
 ##### Limitations
 * Only tested for USB-FS (Full Speed / 12Mbit/s) only.
@@ -29,7 +31,8 @@ Verified under simulation.
 * [UTMI to ULPI Conversion](https://github.com/ultraembedded/cores/tree/master/ulpi_wrapper)
 
 ##### Configuration
-* USB_CLK_FREQ  - Core clock frequency (supports: 60000000 or 48000000)
+* USB_CLK_FREQ  - Core clock frequency (supports: 60000000 (60Mhz) or 48000000  (48Mhz) )
+* WB_CLK_FREQ   - Wish Bone Frequencey (supports: 50000000 (50Mhz) to 100000000 (100Mhz))
 
 ##### Size / Performance
 
