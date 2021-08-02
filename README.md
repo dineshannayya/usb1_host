@@ -28,24 +28,23 @@ The core requires a 48MHz/60MHz USB clock input for UTMI Interface.
 # USB1 Host Test Bench
 <table>
   <tr>
-    <td> align="center"><img src="./docs/TestBenchSetup.png" ></td>
-    <td> align="center">RTL verification included with 40 Character for Uart Remote Loop Back </td>
-    <td> Run command:  verify/run/run_modelsim                       </td>
-    <td> Test Report Status                                          </td>
-   <td> # -------------------- Reporting Status -------------------- </td>
-   <td> #                                                            </td>
-   <td> # 	Number of character received is :    40              </td>
-   <td> # 	Number of character sent     is :    40              </td>
-   <td> # 	Number of parity error rxd   is :     0              </td>
-   <td> # 	Number of stop1  error rxd   is :     0              </td>
-   <td> # 	Number of stop2  error rxd   is :     0              </td>
-   <td> # 	Number of timeout error      is :     0              </td>
-   <td> # 	Number of error              is :     0              </td>
-   <td> # -----------------------------------------------------------</td>
-
+    <td align="center"><img src="./docs/TestBenchSetup.png" ></td>
   </tr>
-
 </table>
+
+    * RTL verification included with 40 Character for Uart Remote Loop Back 
+    * Run command:  verify/run/run_modelsim                       
+    * Test Report Status :
+        # -------------------- Reporting Status -------------------- 
+        #                                                            
+        # 	Number of character received is :    40              
+        # 	Number of character sent     is :    40              
+        # 	Number of parity error rxd   is :     0              
+        # 	Number of stop1  error rxd   is :     0              
+        # 	Number of stop2  error rxd   is :     0              
+        # 	Number of timeout error      is :     0              
+        # 	Number of error              is :     0              
+        # -----------------------------------------------------------
 ##### Testing
 
 Verified under simulation.
