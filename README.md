@@ -32,7 +32,7 @@ The core requires a 48MHz/60MHz USB clock input for UTMI Interface.
   </tr>
 </table>
 
-    * RTL verification included with 40 Character for Uart Remote Loop Back 
+    * RTL verification included with 40 Character Uart Remote Loop Back 
     * Run command:  verify/run/run_modelsim                       
     * Test Report Status :
         # -------------------- Reporting Status -------------------- 
