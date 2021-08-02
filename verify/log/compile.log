@@ -1,0 +1,57 @@
+Model Technology ModelSim Microsemi vlog 2020.3 Compiler 2020.07 Jul 13 2020
+Start time: 12:49:17 on Aug 02,2021
+vlog -sv -work work -f filelist.f 
+-- Compiling package tb_top_v_unit
+-- Compiling module tb_top
+-- Compiling module test_control
+-- Compiling module uart_agent
+-- Compiling module usb_agent
+-- Compiling module usb1_core
+-- Compiling module usb1_crc16
+-- Compiling module usb1_crc5
+-- Compiling module usb1_ctrl
+-- Compiling module usb1_fifo2
+-- Compiling module usb1_idma
+-- Compiling module usb1_pa
+-- Compiling module usb1_pd
+-- Compiling module usb1_pe
+-- Compiling module usb1_pl
+-- Compiling module usb1_rom1
+-- Compiling module usb1_utmi_if
+-- Compiling module usb_phy
+-- Compiling module usb_rx_phy
+-- Compiling module usb_tx_phy
+-- Compiling module generic_fifo_sc_a
+-- Compiling module generic_dpram
+-- Compiling module sync_fifo
+-- Compiling module uart_core
+-- Compiling module uart_txfsm
+-- Compiling module uart_rxfsm
+-- Compiling module uart_cfg
+-- Compiling module clk_ctl
+-- Compiling module double_sync_high
+-- Compiling module double_sync_low
+-- Compiling module bit_register
+-- Compiling module req_register
+-- Compiling module stat_register
+-- Compiling module generic_register
+-- Compiling module generic_intr_stat_reg
+-- Compiling module usb2uart
+-- Compiling module usbh_core
+-- Compiling module usbh_crc16
+-- Compiling module usbh_crc5
+-- Compiling module usbh_fifo
+-- Compiling module usbh_sie
+-- Compiling module usb_fs_phy
+-- Compiling module usb_transceiver
+-- Compiling module async_wb
+-- Compiling module async_fifo
+-- Compiling module usb1_host
+
+Top level modules:
+	tb_top
+	double_sync_high
+	req_register
+	generic_intr_stat_reg
+End time: 12:49:17 on Aug 02,2021, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

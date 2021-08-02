@@ -1,0 +1,949 @@
+Reading pref.tcl
+
+# 2020.3
+
+# vsim -do "modelsim.do" -c tb_top -suppress vsim-3009 
+# Start time: 12:49:17 on Aug 02,2021
+# //  ModelSim Microsemi 2020.3 Jul 13 2020 Linux 5.8.0-63-generic
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim Microsemi and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_top_v_unit
+# Loading work.tb_top
+# Loading work.usb1_host
+# Loading work.async_wb
+# Loading work.async_fifo
+# Loading work.usbh_core
+# Loading work.usbh_sie
+# Loading work.usbh_crc16
+# Loading work.usbh_crc5
+# Loading work.usbh_fifo
+# Loading work.usb_fs_phy
+# Loading work.usb_transceiver
+# Loading work.usb2uart
+# Loading work.usb_phy
+# Loading work.usb_tx_phy
+# Loading work.usb_rx_phy
+# Loading work.usb1_core
+# Loading work.usb1_utmi_if
+# Loading work.usb1_pl
+# Loading work.usb1_pd
+# Loading work.usb1_crc5
+# Loading work.usb1_crc16
+# Loading work.usb1_pa
+# Loading work.usb1_idma
+# Loading work.usb1_fifo2
+# Loading work.usb1_pe
+# Loading work.usb1_ctrl
+# Loading work.usb1_rom1
+# Loading work.sync_fifo
+# Loading work.generic_fifo_sc_a
+# Loading work.generic_dpram
+# Loading work.uart_core
+# Loading work.uart_cfg
+# Loading work.generic_register
+# Loading work.stat_register
+# Loading work.clk_ctl
+# Loading work.uart_txfsm
+# Loading work.uart_rxfsm
+# Loading work.double_sync_low
+# Loading work.uart_agent
+# Loading work.usb_agent
+# Loading work.test_control
+# Loading work.bit_register
+# do modelsim.do
+# 1296: USB Reset  -----
+# HW: Applying USB Reset 
+# 
+# HW: Enter USB bus reset
+# 
+# HW: Reset Wait time Started 
+# 
+# HW: Reset Wait time Over 
+# 
+# HW: Enable root hub
+# 
+# HW: Waiting for device insertion
+# 
+# STATUS: USB Full Speed Detected
+# HW: Device detected
+# 
+# HW: Enable root hub
+# 
+# 1872: Set Address = 1 -----
+# USB STATUS: ACK
+# 
+# 
+#     #######################################################
+#     Received Status is ACK at 17000
+#     #######################################################
+# 
+# 
+#     #######################################################
+#     ERROR: Expected Status and Observed Status didn't match at 24168
+#     Expected Status is ACK at 24168
+#     #######################################################
+# 
+# 29168: Set configuration  -----
+# USB STATUS: ACK
+# 
+# 
+#     #######################################################
+#     Received Status is ACK at 44720
+#     #######################################################
+# 
+# 
+#     #######################################################
+#     ERROR: Expected Status and Observed Status didn't match at 51888
+#     Expected Status is ACK at 51888
+#     #######################################################
+# 
+# 53888: Configuration done !!!!!!
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char  36 ...
+# 
+# ... Reading the UART Status: xxxxxxxX ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 00000002 ...
+# USB STATUS: ACK
+# 
+# ... Write data 24 to UART done cnt :          1 ...
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char 129 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# ... Write data 81 to UART done cnt :          2 ...
+# 
+# 
+# ... Reading the UART Status: 00000026 ...
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char   9 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  24
+# ... Read Data from UART done cnt :         1...
+# USB STATUS: ACK
+# 
+# ... Write data 09 to UART done cnt :          3 ...
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char  99 ...
+# 
+# ... Reading the UART Status: 00000083 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# ... Write data 63 to UART done cnt :          4 ...
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  81
+# ... Read Data from UART done cnt :         2...
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char  13 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 0000000b ...
+# USB STATUS: ACK
+# 
+# ... Write data 0d to UART done cnt :          5 ...
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char 141 ...
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  09
+# ... Read Data from UART done cnt :         3...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 00000063 ...
+# ... Write data 8d to UART done cnt :          6 ...
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char 101 ...
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  63
+# ... Read Data from UART done cnt :         4...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# ... Write data 65 to UART done cnt :          7 ...
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char  18 ...
+# 
+# ... Reading the UART Status: 0000000f ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  0d
+# ... Read Data from UART done cnt :         5...
+# USB STATUS: ACK
+# 
+# ... Write data 12 to UART done cnt :          8 ...
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char   1 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 0000008f ...
+# USB STATUS: ACK
+# 
+# ... Write data 01 to UART done cnt :          9 ...
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char  13 ...
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  8d
+# ... Read Data from UART done cnt :         6...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 00000067 ...
+# ... Write data 0d to UART done cnt :         10 ...
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char 118 ...
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  65
+# ... Read Data from UART done cnt :         7...
+# ... Write data 76 to UART done cnt :         11 ...
+# 
+# 
+# ... Writing char  61 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# ... Write data 3d to UART done cnt :         12 ...
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 00000012 ...
+# 
+# ... Writing char 237 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  12
+# ... Read Data from UART done cnt :         8...
+# USB STATUS: ACK
+# 
+# ... Write data ed to UART done cnt :         13 ...
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char 140 ...
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 00000003 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# ... Write data 8c to UART done cnt :         14 ...
+# 
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  01
+# ... Read Data from UART done cnt :         9...
+# 
+# ... Writing char 249 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 0000000f ...
+# USB STATUS: ACK
+# 
+# ... Write data f9 to UART done cnt :         15 ...
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char 198 ...
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  0d
+# ... Read Data from UART done cnt :        10...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# ... Write data c6 to UART done cnt :         16 ...
+# 
+# 
+# ... Reading the UART Status: 00000076 ...
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char 197 ...
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  76
+# ... Read Data from UART done cnt :        11...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# ... Write data c5 to UART done cnt :         17 ...
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char 170 ...
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 0000003f ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# ... Write data aa to UART done cnt :         18 ...
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  3d
+# ... Read Data from UART done cnt :        12...
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char 229 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 000000ef ...
+# USB STATUS: ACK
+# 
+# ... Write data e5 to UART done cnt :         19 ...
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char 119 ...
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  ed
+# ... Read Data from UART done cnt :        13...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# ... Write data 77 to UART done cnt :         20 ...
+# 
+# 
+# ... Reading the UART Status: 0000008e ...
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char  18 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  8c
+# ... Read Data from UART done cnt :        14...
+# USB STATUS: ACK
+# 
+# ... Write data 12 to UART done cnt :         21 ...
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char 143 ...
+# 
+# ... Reading the UART Status: 000000fb ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  f9
+# ... Read Data from UART done cnt :        15...
+# USB STATUS: ACK
+# 
+# ... Write data 8f to UART done cnt :         22 ...
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char 242 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 000000c6 ...
+# USB STATUS: ACK
+# 
+# ... Write data f2 to UART done cnt :         23 ...
+# 
+# 
+# ... Writing char 206 ...
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  c6
+# ... Read Data from UART done cnt :        16...
+# USB STATUS: ACK
+# 
+# ... Write data ce to UART done cnt :         24 ...
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char 232 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 000000c7 ...
+# USB STATUS: ACK
+# 
+# ... Write data e8 to UART done cnt :         25 ...
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char 197 ...
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  c5
+# ... Read Data from UART done cnt :        17...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# ... Write data c5 to UART done cnt :         26 ...
+# 
+# 
+# ... Reading the UART Status: 000000aa ...
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char  92 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  aa
+# ... Read Data from UART done cnt :        18...
+# USB STATUS: ACK
+# 
+# ... Write data 5c to UART done cnt :         27 ...
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char 189 ...
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 000000e7 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# ... Write data bd to UART done cnt :         28 ...
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  e5
+# ... Read Data from UART done cnt :        19...
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char  45 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 00000077 ...
+# USB STATUS: ACK
+# 
+# ... Write data 2d to UART done cnt :         29 ...
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char 101 ...
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  77
+# ... Read Data from UART done cnt :        20...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 00000012 ...
+# ... Write data 65 to UART done cnt :         30 ...
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char  99 ...
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  12
+# ... Read Data from UART done cnt :        21...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# ... Write data 63 to UART done cnt :         31 ...
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char  10 ...
+# 
+# ... Reading the UART Status: 0000008f ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  8f
+# ... Read Data from UART done cnt :        22...
+# USB STATUS: ACK
+# 
+# ... Write data 0a to UART done cnt :         32 ...
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char 128 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 000000f2 ...
+# USB STATUS: ACK
+# 
+# ... Write data 80 to UART done cnt :         33 ...
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char  32 ...
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  f2
+# ... Read Data from UART done cnt :        23...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 000000ce ...
+# ... Write data 20 to UART done cnt :         34 ...
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char 170 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  ce
+# ... Read Data from UART done cnt :        24...
+# USB STATUS: ACK
+# 
+# ... Write data aa to UART done cnt :         35 ...
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char 157 ...
+# 
+# ... Reading the UART Status: 000000ea ...
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  e8
+# ... Read Data from UART done cnt :        25...
+# ... Write data 9d to UART done cnt :         36 ...
+# 
+# 
+# ... Writing char 150 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# ... Write data 96 to UART done cnt :         37 ...
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char  19 ...
+# 
+# ... Reading the UART Status: 000000c7 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# ... Write data 13 to UART done cnt :         38 ...
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  c5
+# ... Read Data from UART done cnt :        26...
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char  13 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 0000005e ...
+# USB STATUS: ACK
+# 
+# ... Write data 0d to UART done cnt :         39 ...
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Writing char  83 ...
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  5c
+# ... Read Data from UART done cnt :        27...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 000000bf ...
+# ... Write data 53 to UART done cnt :         40 ...
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  bd
+# ... Read Data from UART done cnt :        28...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 0000002f ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  2d
+# ... Read Data from UART done cnt :        29...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 00000067 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  65
+# ... Read Data from UART done cnt :        30...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 00000063 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  63
+# ... Read Data from UART done cnt :        31...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 0000000a ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  0a
+# ... Read Data from UART done cnt :        32...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 00000082 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  80
+# ... Read Data from UART done cnt :        33...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 00000022 ...
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  20
+# ... Read Data from UART done cnt :        34...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 000000aa ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  aa
+# ... Read Data from UART done cnt :        35...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 0000009f ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  9d
+# ... Read Data from UART done cnt :        36...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 00000096 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  96
+# ... Read Data from UART done cnt :        37...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 00000013 ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  13
+# ... Read Data from UART done cnt :        38...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# 
+# ... Reading the UART Status: 0000000f ...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  0d
+# ... Read Data from UART done cnt :        39...
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# USB STATUS: ACK
+# 
+# (tb_top.u_uart_agent.read_char_chk.loop_2) Data match  53
+# ... Read Data from UART done cnt :        40...
+# -------------------- Reporting Configuration --------------------
+# 	Data bit number setting is : 8
+# 	Stop bit number setting is : 1
+# 	Divisor of Uart clock   is : 15
+# 	Parity is enable
+# 	Even parity setting
+# 	FIFO mode is disable
+# -----------------------------------------------------------------
+# -------------------- Reporting Status --------------------
+# 
+# 	Number of character received is :    40
+# 	Number of character sent     is :    40
+# 	Number of parity error rxd   is :     0
+# 	Number of stop1  error rxd   is :     0
+# 	Number of stop2  error rxd   is :     0
+# 	Number of timeout error      is :     0
+# 	Number of error              is :     0
+# -----------------------------------------------------------------
+# Monitor: SPI Master Mode (RTL) Passed
+###################################################
+# ** Note: $finish    : ../tb/tb_top.v(148)
+#    Time: 4499480 ps  Iteration: 0  Instance: /tb_top
+# End time: 12:49:40 on Aug 02,2021, Elapsed time: 0:00:23
+# Errors: 0, Warnings: 0
